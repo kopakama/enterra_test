@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="bet">
+        <div class="bet__inner">
+            <div class="bet__item">
+                <div class="bet__title">Входной взнос</div>
+                <div class="game">
+                    <div class="game__text">
+                        <span class="real-players">5</span>
+                        /
+                        <span class="max-players">10</span>
+                        <br>
+                        <span class="game__title">ФЛ Холдем</span>
+                    </div>
+                </div>
+
+                <div class="resourses">
+                    Доступно средств: <span class="resourses__count">2609</span>
+                </div>
+
+                <div class="res-num">
+                    <input type="text" value="10" class="bet__input" name="resCount" id="resCount">
+                    <div class="slider--hover">
+                        <div class="slider__minus"></div>
+                        <input type="range" min="1" max="100" value="10" class="slider" id="myRange">
+                        <span class="slider__plus"></span>
+                    </div>
+                </div>
+
+                <div class="bet__btns">
+                    <button class="bet__btn">Min</button>
+                    <button class="bet__btn">Max</button>
+                    <button class="bet__btn">Bank</button>
+                    <button class="bet__btn">1/2 Bank</button>
+                </div>
+
+                <div class="bet__text">
+                    Ваш входной взнос не может быть меньше суммы, с которой вы покинули данный стол. Нажмите кнопку ОК, чтобы продолжить, или подождите, когда пройдет время ограничения.
+                </div>
+
+                <button class="bet__btn bet__btn--fullw">Быстрая посадка и автодокупка <span class="arrow right"></span> <span class="arrow right"></span></button>
+            </div>
+
+            <div class="bet__item">
+                <div class="check-info">
+                    <input type="checkbox" class="bet__checkbox" name="bet-checkbox" id="bet-checkbox1">
+                    <label for="bet-checkbox1" class="check-info__label">Быстрая посадка</label>
+                    <button class="bet__btn bet__btn--info">i</button>
+                </div>
+
+                <div class="bet-input">
+                    <label for="bet-input-count" class="bet-input__label">Автоматически
+                        ставить на стол:</label>
+                    <input type="text" value="10" class="bet__input bet__input--small" name="bet-input-count" id="bet-input-count">
+                    <span class="bet-input__label">ББ</span>
+                </div>
+
+                <div class="check-info">
+                    <input type="checkbox" class="bet__checkbox" name="bet-checkbox" id="bet-checkbox2">
+                    <label for="bet-checkbox2" class="check-info__label">Автодокупка</label>
+                    <button class="bet__btn bet__btn--info">i</button>
+                </div>
+
+                <div class="bet__text">
+                    Я хочу пользоваться функцией автоматической докупки и понимаю, что она будет автоматически пополнять мой счет для обеспечения заданого номера стека.
+                </div>
+
+                <div class="bet-input bet-input--noborder bet-input--nopm">
+                    <label for="bet-input-count" class="bet-input__label bet-input__label--fullw">Если у меня меньше:</label>
+                    <input type="text" value="10" class="bet__input bet__input--small" name="bet-input-count" id="bet-input-count">
+                    <span class="bet-input__label">ББ</span>
+                </div>
+
+                <div class="bet-input bet-input--nopm">
+                    <label for="bet-input-count" class="bet-input__label bet-input__label--fullw">Автоматически докупать до:</label>
+                    <input type="text" value="10" class="bet__input bet__input--small" name="bet-input-count" id="bet-input-count">
+                    <span class="bet-input__label">ББ</span>
+                </div>
+
+                <div class="check-info">
+                    <input type="checkbox" class="bet__checkbox" name="bet-checkbox" id="bet-checkbox3">
+                    <label for="bet-checkbox3" class="check-info__label check-info__label--small">Сохранить настройки после
+                        выхода из приложения</label>
+                    <button class="bet__btn bet__btn--info">i</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bet__btns bet__btns--center">
+            <button class="bet__btn">Ok</button>
+            <button class="bet__btn">Cashier</button>
+            <button class="bet__btn">Cancel</button>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
